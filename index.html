@@ -3,145 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Razaullah Fan's | Cricket Hub</title>
-
+<title>Razaullah Fan's | Pakistan Cricket</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
 font-family:Arial,sans-serif;
-background:#06110d;
-color:white;
+background:#03100a;
+color:#fff;
 line-height:1.6
 }
 header{
-background:#071b13;
-border-bottom:1px solid #17452f;
-position:sticky;
-top:0;
-z-index:10
+position:sticky;top:0;z-index:99;
+background:#04160dcc;
+backdrop-filter:blur(12px);
+border-bottom:1px solid #18a96555
 }
 nav{
-max-width:1200px;
-margin:auto;
-padding:18px 22px;
-display:flex;
-justify-content:space-between;
-align-items:center
+max-width:1200px;margin:auto;padding:16px 20px;
+display:flex;align-items:center;justify-content:space-between
 }
-.logo{
-font-size:24px;
-font-weight:800;
-color:#19e68c
-}
+.logo{font-size:22px;font-weight:900;color:#20ed91}
 .links a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:600
+color:#fff;text-decoration:none;margin-left:18px;font-size:14px
 }
 .hero{
-min-height:520px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:60px 20px;
+min-height:600px;
+display:flex;align-items:center;justify-content:center;
+text-align:center;padding:70px 20px;
 background:
-linear-gradient(#03150dbb,#03150df5),
-radial-gradient(circle at center,#08763f,#06110d 65%)
+radial-gradient(circle at 50% 20%,#087b45 0,#04351f 25%,#03100a 68%);
+position:relative;overflow:hidden
 }
-.hero h1{
-font-size:52px;
-margin-bottom:18px
+.hero:after{
+content:"🏏";
+position:absolute;font-size:220px;opacity:.06;
+right:5%;bottom:-40px;transform:rotate(-15deg)
 }
-.hero h1 span{color:#19e68c}
-.hero p{
-font-size:20px;
-color:#c8d8d0;
-max-width:650px;
-margin:auto
+.badge{
+display:inline-block;padding:7px 15px;border-radius:30px;
+background:#0bd77d22;border:1px solid #0bd77d66;
+color:#20ed91;font-size:13px;font-weight:bold
 }
+.hero h1{font-size:55px;line-height:1.1;margin:22px 0}
+.hero h1 span{color:#20ed91}
+.hero p{max-width:650px;margin:auto;color:#c0d4ca;font-size:18px}
 .btn{
-display:inline-block;
-margin-top:30px;
-padding:14px 28px;
-border-radius:30px;
-background:#19e68c;
-color:#03110b;
-text-decoration:none;
-font-weight:800
+display:inline-block;margin-top:30px;padding:14px 27px;
+border-radius:30px;background:#16e982;color:#021009;
+font-weight:800;text-decoration:none;
+box-shadow:0 0 30px #16e98255
 }
-.container{
-max-width:1200px;
-margin:auto;
-padding:55px 20px
-}
-.title{
-font-size:32px;
-margin-bottom:25px
-}
-.grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px
-}
-.card{
-background:#0b2118;
-border:1px solid #17452f;
-border-radius:18px;
-padding:25px;
-box-shadow:0 10px 30px #0005
-}
-.card h3{
-color:#19e68c;
-margin-bottom:10px
-}
+.container{max-width:1200px;margin:auto;padding:60px 20px}
+.title{font-size:30px;margin-bottom:25px}
+.title span{color:#20ed91}
 .score{
-background:linear-gradient(135deg,#0c2e20,#092017);
-border:1px solid #1c6b46;
-border-radius:20px;
-padding:28px;
-text-align:center
-}
-.score small{color:#9bb9aa}
-.score strong{
-display:block;
-font-size:40px;
-margin:10px
+background:linear-gradient(135deg,#073e27,#062316);
+border:1px solid #20ed9166;border-radius:22px;
+padding:30px;text-align:center;
+box-shadow:0 15px 40px #0007
 }
 .live{
-display:inline-block;
-background:#e33;
-padding:5px 12px;
-border-radius:20px;
-font-size:12px;
-font-weight:bold
+display:inline-block;background:#ef3340;padding:5px 13px;
+border-radius:20px;font-size:11px;font-weight:bold
 }
-.news{
-min-height:150px
+.score h2{margin:12px 0}
+.score strong{display:block;font-size:43px;color:#20ed91}
+.grid{
+display:grid;grid-template-columns:repeat(3,1fr);gap:20px
+}
+.card{
+background:linear-gradient(145deg,#08291b,#041a10);
+border:1px solid #176b45;border-radius:20px;
+padding:25px;transition:.3s
+}
+.card:hover{transform:translateY(-7px);border-color:#20ed91}
+.card h3{color:#20ed91;margin-bottom:8px}
+.card p{color:#b7cbc1;font-size:14px}
+.player{
+text-align:center;padding:28px 15px
+}
+.player .avatar{
+width:90px;height:90px;margin:auto auto 15px;
+border-radius:50%;display:flex;align-items:center;
+justify-content:center;font-size:42px;
+background:linear-gradient(135deg,#087c46,#0bd77d)
+}
+.player h3{color:white}
+.player small{color:#20ed91}
+.gallery{
+display:grid;grid-template-columns:repeat(3,1fr);gap:15px
+}
+.gallery div{
+height:150px;border-radius:18px;
+display:flex;align-items:center;justify-content:center;
+font-size:45px;background:linear-gradient(135deg,#075d35,#0b2418);
+border:1px solid #176b45
 }
 .banner{
-margin-top:20px;
-padding:45px 25px;
-border-radius:22px;
-text-align:center;
-background:linear-gradient(135deg,#087a45,#063a28)
+margin-top:25px;text-align:center;padding:45px 20px;
+border-radius:25px;
+background:linear-gradient(135deg,#087c46,#04351f)
 }
-.banner h2{
-font-size:34px;
-margin-bottom:10px
+.banner h2{font-size:35px}
+.social{text-align:center}
+.social a{
+display:inline-block;margin:7px;padding:12px 22px;
+border:1px solid #20ed9166;border-radius:25px;
+color:#20ed91;text-decoration:none;font-weight:bold
 }
 footer{
-background:#030a07;
-border-top:1px solid #17452f;
-text-align:center;
-padding:30px 20px;
-color:#9bb9aa
+text-align:center;padding:35px 20px;
+background:#020906;color:#8ca69a;
+border-top:1px solid #17452f
 }
 @media(max-width:800px){
 .links{display:none}
-.hero h1{font-size:38px}
-.grid{grid-template-columns:1fr}
+.hero h1{font-size:40px}
+.grid,.gallery{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -153,88 +132,61 @@ color:#9bb9aa
 <div class="logo">🏏 Razaullah Fan's</div>
 <div class="links">
 <a href="#">Home</a>
-<a href="#scores">Live Scores</a>
+<a href="#scores">Scores</a>
+<a href="#players">Players</a>
+<a href="#gallery">Gallery</a>
 <a href="#news">News</a>
-<a href="#matches">Matches</a>
 </div>
 </nav>
 </header>
 
 <section class="hero">
 <div>
+<div class="badge">🇵🇰 PAKISTAN CRICKET • SPORTS HUB</div>
 <h1>Cricket is not just a game.<br><span>It's an emotion.</span></h1>
-<p>Welcome to Razaullah Fan's — your cricket hub for scores, news, matches and unforgettable cricket moments.</p>
+<p>Welcome to Razaullah Fan's — your home for cricket scores, players, news, moments and fan passion.</p>
 <a class="btn" href="#scores">Explore Cricket →</a>
 </div>
 </section>
 
 <section class="container" id="scores">
-<h2 class="title">🔴 Live Score</h2>
-
+<h2 class="title">🔴 Live <span>Score</span></h2>
 <div class="score">
 <span class="live">LIVE</span>
-<h2>Pakistan 🇵🇰 vs India 🇮🇳</h2>
+<h2>🇵🇰 Pakistan vs India 🇮🇳</h2>
 <strong>PAK 187/6</strong>
 <p>India 182/8</p>
 <small>Pakistan leading by 5 runs</small>
 </div>
 </section>
 
-<section class="container" id="matches">
-<h2 class="title">🏏 Cricket Hub</h2>
-
+<section class="container" id="players">
+<h2 class="title">⭐ Cricket <span>Stars</span></h2>
 <div class="grid">
-
-<div class="card">
-<h3>🔥 Live Scores</h3>
-<p>Follow exciting cricket matches and stay updated with the latest scores.</p>
+<div class="card player">
+<div class="avatar">🏏</div>
+<h3>Babar Azam</h3>
+<small>Pakistan • Batter</small>
 </div>
-
-<div class="card">
-<h3>📅 Match Schedule</h3>
-<p>Keep track of upcoming cricket matches and important fixtures.</p>
+<div class="card player">
+<div class="avatar">⚡</div>
+<h3>Shaheen Afridi</h3>
+<small>Pakistan • Fast Bowler</small>
 </div>
-
-<div class="card">
-<h3>🏆 Cricket Moments</h3>
-<p>Relive the biggest sixes, wickets and unforgettable performances.</p>
+<div class="card player">
+<div class="avatar">🔥</div>
+<h3>Mohammad Rizwan</h3>
+<small>Pakistan • Wicketkeeper</small>
 </div>
-
 </div>
 </section>
 
-<section class="container" id="news">
-<h2 class="title">📰 Latest Cricket News</h2>
-
-<div class="grid">
-
-<div class="card news">
-<h3>Pakistan Cricket 🇵🇰</h3>
-<p>Latest updates, performances and memorable moments from Pakistan cricket.</p>
-</div>
-
-<div class="card news">
-<h3>🌍 World Cricket</h3>
-<p>Cricket news, major matches and stories from around the world.</p>
-</div>
-
-<div class="card news">
-<h3>⭐ Fan Zone</h3>
-<p>Share your favourite players, moments and cricket opinions.</p>
-</div>
-
-</div>
-
-<div class="banner">
-<h2>Cricket Unites Us 💚</h2>
-<p>One game. Millions of fans. Endless emotions.</p>
+<section class="container" id="gallery">
+<h2 class="title">📸 Cricket <span>Gallery</span></h2>
+<div class="gallery">
+<div>🏏</div><div>🇵🇰</div><div>🏆</div>
+<div>🔥</div><div>⚡</div><div>💚</div>
 </div>
 </section>
 
-<footer>
-<p>© 2026 Razaullah Fan's</p>
-<p>Made with ❤️ for Cricket Fans</p>
-</footer>
-
-</body>
-</html>
+<section class="container" id="news
