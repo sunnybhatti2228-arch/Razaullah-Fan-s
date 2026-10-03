@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Razaullah Fan's - cricket scores, news, matches and videos">
+<title>Razaullah Fan's | Cricket</title>
+<style>
+:root{--green:#079447;--dark:#10251d;--light:#f1f3f4;--red:#e53935;--text:#17201c}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--text)}
+a{text-decoration:none;color:inherit}.top{background:var(--dark);color:#fff}.topbar{max-width:1200px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:27px;font-weight:900}.brand b{color:#31c77a}.toplinks{display:flex;gap:18px;font-size:14px}
+.nav{background:#fff;border-bottom:1px solid #ddd}.navin{max-width:1200px;margin:auto;padding:0 20px;display:flex;gap:28px;overflow:auto}.nav a{padding:16px 2px;font-weight:700;white-space:nowrap}.nav a:hover{color:var(--green)}
+.flash{background:var(--green);color:#fff}.flashin{max-width:1200px;margin:auto;padding:10px 20px;font-weight:700}
+.wrap{max-width:1200px;margin:auto;padding:20px}.layout{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+.hero{background:linear-gradient(135deg,#092f21,#087d45);border-radius:14px;color:#fff;padding:28px;margin-bottom:20px;position:relative;overflow:hidden}.hero:after{content:"🏏";position:absolute;right:25px;bottom:-18px;font-size:110px;opacity:.12}.eyebrow{font-size:12px;font-weight:800;letter-spacing:1px;opacity:.8}.hero h1{font-size:34px;margin:10px 0}.matchline{display:flex;align-items:center;justify-content:center;gap:25px;margin:24px 0;font-size:24px;font-weight:900}.vs{background:#fff;color:#087d45;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:14px}.hero .info{text-align:center;font-size:14px}.count{margin:15px auto 0;text-align:center;font-weight:800;background:#ffffff18;border-radius:8px;padding:10px;max-width:380px}
+.card{background:#fff;border-radius:12px;padding:18px;margin-bottom:20px;box-shadow:0 2px 8px #00000010}.title{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e5e5;padding-bottom:12px;margin-bottom:12px}.title h2{margin:0;font-size:21px}.title a{color:var(--green);font-size:13px;font-weight:700}
+.score{border:1px solid #ddd;border-radius:10px;margin:12px 0;overflow:hidden}.scorehead{background:#f7f8f8;padding:10px 13px;display:flex;justify-content:space-between;font-size:12px;font-weight:800}.live{color:var(--red)}.teams{padding:13px}.team{display:flex;justify-content:space-between;padding:6px 0;font-weight:800}.small{font-size:12px;color:#69736e}.result{color:var(--green);font-size:13px;font-weight:700;padding:0 13px 13px}
+.news{display:grid;grid-template-columns:100px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid #eee}.news:last-child{border-bottom:0}.thumb{height:70px;border-radius:8px;background:linear-gradient(135deg,#153e2e,#14a25c);display:grid;place-items:center;font-size:35px}.news h3{margin:2px 0 6px;font-size:16px}.news p{margin:0;color:#69736e;font-size:13px;line-height:1.4}
+.side{background:#fff;border-radius:12px;padding:18px;margin-bottom:20px;box-shadow:0 2px 8px #00000010}.side h2{font-size:20px;margin:0 0 13px}.row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #eee;font-size:14px}.row:last-child{border:0}.tag{background:#e9f7ef;color:#087d45;padding:5px 8px;border-radius:5px;font-size:11px;font-weight:800}.poll{background:#10251d;color:#fff}.poll p{color:#c9d6d0}.poll button{border:0;border-radius:7px;padding:10px 12px;margin:4px;background:#fff;color:#123;font-weight:700}
+.tabs{display:flex;gap:8px;overflow:auto;margin-bottom:14px}.tab{border:1px solid #ddd;background:#fff;border-radius:20px;padding:8px 14px;white-space:nowrap;font-weight:700;font-size:13px}.tab.active{background:var(--green);color:#fff;border-color:var(--green)}
+footer{background:#10251d;color:#b9c7c1;padding:30px 20px;margin-top:10px;text-align:center}.footbrand{font-size:22px;color:#fff;font-weight:900;margin-bottom:8px}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.toplinks{display:none}.brand{font-size:23px}.hero h1{font-size:27px}.matchline{font-size:19px;gap:12px}.wrap{padding:12px}.news{grid-template-columns:78px 1fr}}
+</style>
+</head>
+<body>
+<header class="top"><div class="topbar"><div class="brand">Razaullah <b>Fan's</b></div><div class="toplinks"><span>Cricket</span><span>News</span><span>Scores</span><span>Videos</span></div></div></header>
+<nav class="nav"><div class="navin"><a href="#">HOME</a><a href="#scores">SCORES</a><a href="#matches">MATCHES</a><a href="#news">NEWS</a><a href="#rankings">RANKINGS</a><a href="#videos">VIDEOS</a><a href="#poll">POLL</a></div></nav>
+<div class="flash"><div class="flashin">🔴 MATCH ALERT &nbsp; Pakistan 🇵🇰 vs India 🇮🇳 &nbsp; • &nbsp; Gold Medal Match</div></div>
+
+<main class="wrap">
+<div class="layout">
+<div>
+<section class="hero">
+<div class="eyebrow">ASIAN GAMES • MEN'S T20 CRICKET</div>
+<h1>Pakistan vs India</h1>
+<div class="matchline"><span>🇵🇰 PAK</span><span class="vs">VS</span><span>IND</span>🇮🇳</div>
+<div class="info">Gold Medal Match • Saturday, 3 October 2026 • 9:30 AM PKT<br>📍 Nisshin, Japan</div>
+<div class="count" id="count">Loading match countdown...</div>
+</section>
+
+<section class="card" id="scores">
+<div class="title"><h2>Live Scores</h2><a href="#">VIEW ALL →</a></div>
+<div class="tabs"><div class="tab active">All</div><div class="tab">Pakistan</div><div class="tab">India</div><div class="tab">T20</div></div>
+<div class="score"><div class="scorehead"><span>ASIAN GAMES FINAL</span><span class="live">UPCOMING</span></div><div class="teams"><div class="team"><span>🇵🇰 Pakistan</span><span>—</span></div><div class="team"><span>🇮🇳 India</span><span>—</span></div></div><div class="result">Starts 9:30 AM PKT • Gold Medal Match</div></div>
+<div class="score"><div class="scorehead"><span>SEMIFINAL</span><span>COMPLETED</span></div><div class="teams"><div class="team"><span>🇵🇰 Pakistan</span><span>Qualified</span></div></div><div class="result">Pakistan reached the final</div></div>
+</section>
+
+<section class="card" id="matches">
+<div class="title"><h2>Matches</h2><a href="#">FULL SCHEDULE →</a></div>
+<div class="score"><div class="scorehead"><span>03 OCT • FINAL</span><span>9:30 AM</span></div><div class="teams"><div class="team"><span>🇵🇰 Pakistan</span><span>—</span></div><div class="team"><span>🇮🇳 India</span><span>—</span></div></div></div>
+</section>
+
+<section class="card" id="news">
+<div class="title"><h2>Latest Cricket News</h2><a href="#">MORE NEWS →</a></div>
+<div class="news"><div class="thumb">🏏</div><div><h3>Pakistan vs India final set for Nisshin</h3><p>Follow Razaullah Fan's for match updates, scores and cricket moments.</p></div></div>
+<div class="news"><div class="thumb">🔥</div><div><h3>Big match, big stage</h3><p>All the important updates from the Asian Games cricket action.</p></div></div>
+<div class="news"><div class="thumb">🇵🇰</div><div><h3>Pakistan Cricket Updates</h3><p>Stay connected with the latest cricket content and fan updates.</p></div></div>
+</section>
+</div>
+
+<aside>
+<section class="side" id="rankings"><h2>Quick Links</h2><div class="row"><span>🏆 Match Centre</span><span class="tag">OPEN</span></div><div class="row"><span>📊 Scorecard</span><span class="tag">LIVE</span></div><div class="row"><span>📰 Cricket News</span><span class="tag">NEWS</span></div><div class="row"><span>🎬 Cricket Videos</span><span class="tag">VIDEO</span></div></section>
+<section class="side"><h2>Trending</h2><div class="row"><span>Pakistan vs India</span><b>#1</b></div><div class="row"><span>Asian Games Cricket</span><b>#2</b></div><div class="row"><span>Gold Medal Match</span><b>#3</b></div></section>
+<section class="side poll" id="poll"><h2>Fan Poll</h2><p>Who will win the Gold Medal Match?</p><button>🇵🇰 Pakistan</button><button>🇮🇳 India</button></section>
+<section class="side" id="videos"><h2>Follow Us</h2><p class="small">Razaullah Fan's cricket updates aur new posts ke liye Facebook par follow karein.</p><a href="https://www.facebook.com/" target="_blank" style="display:block;text-align:center;background:#087d45;color:#fff;padding:12px;border-radius:8px;font-weight:800;margin-top:12px">Facebook Page</a></section>
+</aside>
+</div>
+</main>
+
+<footer><div class="footbrand">Razaullah Fan's</div><div>Cricket Scores • News • Matches • Fan Community</div><p>© 2026 Razaullah Fan's</p></footer>
+
+<script>
+const target=new Date("2026-10-03T09:30:00+05:00").getTime();
+function countdown(){let d=target-Date.now(),x=document.getElementById("count");if(d<=0){x.textContent="🏏 MATCH TIME";return}let day=Math.floor(d/86400000);d%=86400000;let h=Math.floor(d/3600000);d%=3600000;let m=Math.floor(d/60000);let s=Math.floor(d%60000/1000);x.textContent=`Starts in ${day}d ${h}h ${m}m ${s}s`;}countdown();setInterval(countdown,1000);
+</script>
+</body>
+</html>
